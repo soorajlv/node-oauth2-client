@@ -1,0 +1,15 @@
+extends layout
+block content
+    div.row
+        div.col-3
+        div.col-6
+            div.text-center
+                div.alert.alert-danger=message
+            div.row
+                div.col-3.border  Details
+                div.col-9.border
+                    p error : #{payload.error}
+                    p error_description : #{payload.error_description}
+                    p hint : #{payload.hint}
+        div.col-3
+    p(class=pClasses) © 2017-2018

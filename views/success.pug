@@ -1,0 +1,21 @@
+extends layout
+block content
+    div.row
+        div.col-3
+        div.col-6
+            div.text-center
+                div.alert.alert-success Authorization successful
+            div.row
+                div.col-3.border  Access Token
+                div.col-9.border=token.access_token
+            div.row
+                div.col-3.border  Refresh Token
+                div.col-9.border=token.refresh_token
+            div.row
+                div.col-3.border  Token Type
+                div.col-9.border=token.token_type
+            div.row
+                div.col-3.border  Expires In
+                div.col-9.border=token.expires_in
+        div.col-3
+    p(class=pClasses) © 2017-2018

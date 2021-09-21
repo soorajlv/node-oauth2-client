@@ -1,0 +1,11 @@
+extends layout
+block content
+  div.row
+    div.col-3
+    div.col-6
+      div.text-center
+          - var buttonClass=['btn', 'btn-lg', 'btn-primary', 'btn-block'];
+          a(class=buttonClass href='/login') Log in with smartTONi
+          - var pClasses=['mt-5', 'mb-3', 'text-muted'];
+          p(class=pClasses) © 2017-2018
+    div.col-3
