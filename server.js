@@ -1,6 +1,6 @@
 'use strict';
 
-const createApplication = require('./');
+const createApplication = require('.');
 const { ClientCredentials, ResourceOwnerPassword, AuthorizationCode } = require('simple-oauth2');
 const randomstring = require("randomstring");
 const crypto = require("crypto");
